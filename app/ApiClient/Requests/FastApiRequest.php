@@ -8,7 +8,6 @@ class FastApiRequest extends BaseRequest
 {
     public function __construct()
     {
-        // $this->endpoint = 'dpc-nginx/api/fast-delivery';
         $this->endpoint = env('FAST_API_URL');
         $this->serviceName = 'SlowDeliveryService';
         $request = resolve(Request::class);
